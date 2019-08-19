@@ -1,0 +1,55 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+</div>
+<h2>FontAwsome Test</h2>
+
+<i class="fas fa-thumbs-up"></i>
+<i class="far fa-thumbs-up"></i>
+<i class="fal fa-thumbs-up"></i>
+
+
+<h2>Kendo Test</h2>
+@(Html.Kendo().Barcode()
+                  .Name("barcode") // The name of the Barcode is mandatory. It specifies the "id" attribute of the widget.
+                  .Value("2346722") // Set the value of the Barcode.
+                  .Width(200)
+                  .Height(100))
+
+@(Html.Kendo().DatePicker()
+                  .Name("datepicker")
+                  .Value("10/10/2011")
+                  .HtmlAttributes(new { style = "width: 100%", title = "datepicker" })
+)
+
+<h2>Bootstrap Test</h2>
+<div class="alert alert-primary" role="alert" click="GetPersonInfo();" >
+    This is a primary alert—check it out!
+</div>
+
+<button type="button" class="btn btn-lg btn-danger" data-toggle="popover" title="Popover title" data-content="And here's some amazing content. It's very engaging. Right?">Click to toggle popover</button>
+
+<button type="button" class="btn btn-secondary" data-container="body" data-toggle="popover" data-placement="top" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
+    Popover on top
+</button>
+
+<button type="button" class="btn btn-secondary" data-container="body" data-toggle="popover" data-placement="right" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
+    Popover on right
+</button>
+
+<button type="button" class="btn btn-secondary" data-container="body" data-toggle="popover" data-placement="bottom" data-content="Vivamus
+sagittis lacus vel augue laoreet rutrum faucibus.">
+    Popover on bottom
+</button>
+
+<button type="button" class="btn btn-secondary" data-container="body" data-toggle="popover" data-placement="left" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
+    Popover on left
+</button>
+
+@section scripts {
+
+}

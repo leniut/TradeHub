@@ -1,0 +1,1 @@
+var personName,personAge,test=2;personName="Berry Allen",personAge=34;var titleEl=document.querySelector("h2");function GetPersonInfo(){return console.log("Test TS:",personName+" is "+personAge+" yeras old !!"),personName+" is "+personAge+" yeras old !!"}titleEl.innerText="Hello from TypeScript",$(function(){$('[data-toggle="popover"]').popover()});
